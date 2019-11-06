@@ -1,0 +1,431 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Data Journalism at the BBC</title>
+
+		<meta name="description" content="Presentation on data journalism at the BBC">
+		<meta name="author" content="Nassos Stylianou">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="../reveal/css/reveal.css">
+		<link rel="stylesheet" href="../reveal/css/theme/white.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="../reveal/lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? '../reveal/css/print/pdf.css' : '../reveal/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+	<div id="myLogo" style="background: url(images/bbc_logo.png);
+                        position: absolute;
+                        top: 20px;
+                        left: 20px;
+                        width: 100px;
+                        height: 29px;">
+                        	
+    </div>
+
+	<div id="progressbar"></div>
+	<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section data-background-color="#b91c21">
+					<h1>Data Journalism at the BBC</h1>
+					<h3><a href="https://nassosstylianou.com/" target=_blank>Nassos Stylianou</a></h3>
+					<h4>Senior Data journalist | BBC News</h4>
+					<p><a href ="https://twitter.com/nassos_" target=_blank>@nassos_</a></p>
+				</section>
+
+				<section class="imgbg"  data-background="images/example_data_projects.png">
+				</section>
+
+
+				<section>
+					<h2>Visual and Data Journalism team</h2>
+						<ul >
+							<li class="fragment">Team of designers, developers, data scientists, journalists and editors</li>
+							<li class="fragment">Variety of skills within the team</li>
+							<li class="fragment">Other journalists and teams in the BBC also working with data</li>
+						</ul>	
+				</section>
+
+				<section>
+					<h2>What is data journalism?</h2>
+						<ul >
+							<li class="fragment">Sourcing reliable datasets</li>
+							<li class="fragment">Finding stories in the data</li>
+							<li class="fragment">Visualising them for our audience</li>
+						</ul>	
+				</section>
+
+				<section>
+					<h2>Many different types of datasets</h2>
+						<ul>
+							<li class="fragment"><b class="red">Open data: </b><span class="fragment">Government departments, Office for National Statistics, Eurostat, United Nations, World Health Organisation etc </span></li>
+							<li class="fragment"><b class="red">Exclusive data: </b><span class="fragment">Freedom of Information requests, leaks, contacts, web scraping</span></li>
+							<li class="fragment"><b class="red">Creating your own datasets</b></li>
+						</ul>	
+				</section>
+
+				<section>
+					<h2>Stories using open data</h2>
+				</section>
+				
+				<section data-background-video="video/nhs_tracker_video.mov" data-background-video-loop>
+				</section>
+
+				<section data-background-video="video/gender_pay_gap.mov"
+				 data-background-video-loop>
+				</section>
+
+				<section>
+					<h2>Stories using exclusive data</h2>
+				</section>
+
+				
+
+				<section class="imgbg"  data-background="images/coffee_project.png">
+				</section>
+
+
+				<section data-background-video="video/moped_crime_check_your_area.mov"
+				 data-background-video-loop>
+				</section>
+
+				<section>
+					<h2>Stories using data we collected</h2>
+				</section>
+
+				<section class="imgbg"  data-background="images/buried_without_a_name_1.png">
+				</section>
+
+				<section class="imgbg"  data-background="images/buried_without_a_name_2.png">
+				</section>
+
+
+				<section data-background-video="video/month_of_jihadist_attacks.mov"
+				 data-background-video-loop>
+				</section>
+
+				<section>
+					<h2>How do we find stories in the data?</h2>
+						<ul>
+							<li class="fragment">Combine different datasets together</li>
+							<li class="fragment">Ask the right questions of the data</li>
+							<li class="fragment">Work closely with subject-matter experts</li>
+							<li class="fragment">Look for anything unexpected</li>
+							<li class="fragment">Examine the outliers</li>
+						</ul>	
+				</section>
+
+				<section>
+					<h2>But first, we need to clean the data</h2>
+						<ul>
+							<li class="fragment">Each dataset has its own challenges to clean</li>
+							<li class="fragment">Take nothing at face value...<span class="fragment">make sure each variable means what you think it means</span></li>
+							<li class="fragment">Just because the data is from an official source, doesn't mean it's clean</li>
+							<li class="fragment">Lots of data still in PDFs</li>
+							<li class="fragment">Data from the web may come in unfamiliar, or difficult to work with, formats</li>
+							<li class="fragment">Even when the data comes in spreadsheet format, it often needs a lot of cleaning before it is ready for analysis</li>
+							<li class="fragment">Trailing spaces, merged cells, spelling errors, concatenated columns, 0s meaning no data and many many more</li>
+						</ul>	
+				</section>
+
+				<section class="imgbg"  data-background="images/dirty_dataset_example.png">
+				</section>
+
+				<section>
+					<h2>Data analysis</h2>
+						<ul>
+							<li class="fragment">In its simplest form, this will invove some basic summing, <span class="fragment">ranking,</span> <span class="fragment"> finding averages,</span><span class="fragment"> looking at change over time</span></li>
+							<li class="fragment">Using statistical models and techniques to analyse data</span></li>
+							<li class="fragment">Analysing very large datasets - millions of observations</li>	
+						</ul>	
+				</section>
+				
+
+				<section>
+					<h2>Grouping and ranking</h2>
+				</section>
+				
+				<section class="imgbg"  data-background="images/simple_analysis.png">
+				</section>
+
+				<section>
+					<h2>Statistical modelling</h2>
+
+				</section>
+
+				<section class="imgbg"  data-background="images/regression_analysis_example.png">
+				</section>
+				
+				<section class="imgbg"  data-background="images/olympic_body_match_big_example.png">
+				</section>
+
+				<section>
+					<pre><code data-trim data-noescape>
+var properties = ['weight', 'height'];
+
+var sum = function (values) {
+	return _.reduce(values, function (a, b) { return a + b;});
+													};
+
+var getSquaredDifference = function (a, b) {
+	return Math.pow(a - b, 2);
+};
+
+var getDateDifference = function(a, b) {
+	return Math.abs(new Date(a) - new Date(b));
+};
+
+var setDissimilarityDistance = function (athletes, user) {
+	_.each(athletes, function (athlete) {
+		var distance;
+		var squareDifferences = [];
+		_.each(properties, function (prop) {
+			squareDifferences.push(getSquaredDifference(athlete[prop], user[prop]));
+		});
+		athlete['distance'] = sum(squareDifferences);
+		athlete['birthDifference'] = getDateDifference(athlete.dob, user.dob);
+	});
+	
+	return athletes;
+};
+
+var getBodyMatches = function (athletes, user) {
+	var dataWithDistances = setDissimilarityDistance(athletes, user);
+	var athleteMatches = _.sortBy(_.sortBy(dataWithDistances, 'birthDifference'), 'distance');
+	return athletesMatches.slice(0,3);
+};
+
+
+					</code></pre>
+				</section>
+
+				<section>
+					<h2>Thankfully, it worked...</h2>
+					<img class="fragment" src="images/olympic_body_match_twitter.png"></img>
+				</section>
+
+				<section>
+					<img class="fragment" src="images/olympic_body_match_twitter_bbc_editor_reply.png"></img>
+					<img class="fragment" src="images/olympic_body_match_twitter_bbc_news.png"></img>
+				</section>
+
+
+				<section>
+					<h2>Working with large datasets</h2>
+				</section>
+
+				<section data-background-video="video/ward_level_house_prices_demo.mov" data-background-video-loop>
+				</section>
+
+				<section>
+					<h2>A detailed look at house prices</h2>
+						<ul>
+							<li class="fragment">Started off with more than 22 million rows of all property transactions in England and Wales</li>
+							<li class="fragment">Analysed <span class="b" style="color: #b91c21">8.5 million property transactions</span> over a 10-year period</li>
+							<li class="fragment">Carried out inflation-adjustment to find how house prices had changed at very detailed geographical levels</li>
+							<li class="fragment">Reproducible data analysis was key</li>
+							<li class="fragment">Added benefit is that the analysis can be re-run quickly when the data is updated</li>
+						</ul>	
+				</section>
+
+				<section>
+					<h2>The power of reproducible analysis</h2>
+				</section>
+
+				<section data-background-video="video/million_pound_homes.mov" data-background-video-loop>
+				</section>
+
+				<section>
+					<h2>Using data to answer questions</h2>
+				</section>
+
+				<section>
+					<h2>Do the saddest songs win Eurovision?</h2>
+				</section>
+
+				<section class="imgbg"  data-background="images/eurovison_sad_songs_sized.png">
+				</section>
+				
+				<section>
+					<h2>What are the most popular wedding dates?</h2>
+				</section>
+
+				<section class="imgbg"  data-background="images/wedding_dates_plot.png">
+				</section>
+
+				<section>
+					<h2>What makes the perfect penalty?</h2>
+				</section>
+
+				<section class="imgbg"  data-background="images/perfect_penalty.png">
+				</section>
+						
+
+
+				<section>
+					<h2>What tools do we use to clean and analyse data?</h2>
+					<ul>
+						<li class="fragment">Excel</li>
+						<li class="fragment">Open Refine</li>
+						<li class="fragment">Tabula: extract data tables from PDFs</li>
+						<li class="fragment">R</li>
+						<li class="fragment">Python</li>
+						<li class="fragment">QGIS</li>
+					</ul>	
+				</section>
+
+				<section>
+					<h2>Visualising data</h2>
+				</section>
+
+				<section class="imgbg"  data-background="images/life_and_death_in_syria.png">
+				</section>
+
+				<section data-background-video="video/life_and_death_in_syria_demo.mov" data-background-video-loop>
+				</section>
+
+				<section>
+					<h2>A great data visualisation should...</h2>
+					<ul>
+						<li class="fragment">Tell a story</li>
+						<li class="fragment">Be visually stimulating</li>
+						<li class="fragment">Simple to understand</li>
+						<li class="fragment">Rewarding</li>
+					</ul>	
+				</section>
+
+
+				<section>
+					<h2>Visualising data</h2>
+					<ul>
+						<li class="fragment">Most of the data visualisations we do are static</li>
+						<li class="fragment">If you ask the reader to do anything other than scroll, it needs to be worth it</li>
+						<li class="fragment">If it doesn't work well on mobile, you are excluding more than half your audience</li>
+						<li class="fragment">When dealing with large numbers, try to put them in terms that the audience can relate to</li>
+					</ul>	
+				</section>
+
+				<section>
+					<h2>Personal relevance calculators</h2>
+				</section>
+				
+				<section data-background-video="video/robots_demo.mov" data-background-video-loop>
+				</section>
+
+				<section>
+					<h2>Tell me about me</h2>
+					<ul>
+						<li class="fragment">Lets people expore the part of the data that is relevant to them</li>
+						<li class="fragment">People like to compare themselves and see where they stand in relation to others</li>
+						<li class="fragment">But make sure you are telling people something about THEMSELVES they don’t know – often for this you need granular data</li>
+						<li class="fragment">Ask for as little info as you need upfront: don't create unnecessary barriers to entry</li>
+						<li class="fragment">A personal relevance calculator can be much more engaging than a regular story or dataviz</li>
+						<li class="fragment">More shareable than a regular story or dataviz</li>
+					</ul>	
+				</section>
+				
+				<section>
+					<h2>Links to all the stories mentioned in this presentation (1)</h2>
+					<ul>
+						<li><a style="color: black" href="http://www.bbc.co.uk/news/health-41483322" target=_blank>NHS Tracker</a></li>
+						<li><a style="color: black" href ="http://www.bbc.co.uk/news/resources/idt-fa38cb91-bdc0-4229-8cae-1d5c3b447337" target=_blank>Coffee under threat</a></li>
+						<li><a style="color: black" href="http://www.bbc.co.uk/news/resources/idt-91f3683c-5e3c-4a2e-92eb-7d7f6a024c02" target=_blank>Buried without a name</a></li>
+						<li><a style="color: black" href="http://www.bbc.co.uk/news/election-us-2016-37889032" target=_blank>Trump's 2016 electoral victory in maps</a></li>
+						<li><a style="color: black" href="http://www.bbc.co.uk/news/uk-politics-36616028" target=_blank>The EU Referendum result visualised</a></li>
+						<li><a style="color: black" href="https://www.bbc.co.uk/news/business-43632763" target=_blank>What is the gender pay gap at your company?</a></li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Links to all the stories mentioned in this presentation (2)</h2>
+					<ul>
+						<li><a style="color: black" href="http://www.bbc.co.uk/sport/olympics/36984887" target=_blank>Rio 2016: Who is your Olympic body match?</a></li>
+						<li><a style="color: black" href ="http://www.bbc.co.uk/news/resources/idt-841ebc3a-1be9-493b-8800-2c04890e8fc9" target=_blank>Life and death in Syria</a></li>
+						<li><a style="color: black" href="http://www.bbc.co.uk/news/technology-34066941" target=_blank>Will a robot take your job?</a></li>
+						<li><a style="color: black" href="http://www.bbc.co.uk/news/business-41582755" target=_blank>Have house prices actually gone up in your neighbourhood?</a></li>
+						<li><a style="color: black" href ="https://www.bbc.co.uk/news/business-44237967" target=_blank>How many £1m-plus homes are sold near you?</a></li>
+	
+					</ul>
+				</section>
+
+				<section>
+					<h2>Links to all the stories mentioned in this presentation (3)</h2>
+					<ul>
+						<li><a style="color: black" href="https://www.bbc.co.uk/sport/football/44641247" target=_blank>World Cup 2018: Everything you need to know about penalty shootouts</a></li>
+						<li><a style="color: black" href="https://www.bbc.co.uk/news/uk-england-london-44045128" target=_blank>London's moped crime hotspots revealed: Check your area</a></li>
+						<li><a style="color: black" href="https://www.bbc.co.uk/news/entertainment-arts-43975088" target=_blank>Do the saddest songs win Eurovision?</a></li>
+						<li><a style="color: black" href="https://www.bbc.co.uk/news/uk-44141870" target=_blank>Royal wedding 2018: How popular is your wedding date?</a></li>
+						
+	
+					</ul>
+				</section>
+
+
+				<section data-background-color="#b91c21">
+					<h1> Thank you</h1>
+					<h2>Data Journalism at the BBC</h2>
+					<h3><a href="https://nassosstylianou.com/" target=_blank>Nassos Stylianou</a></h3>
+					<h4>Senior Data journalist | BBC News</h4>
+					<p><a href ="https://twitter.com/nassos_" target=_blank>@nassos_</a></p>
+				</section>
+
+			</div>
+		</div>
+
+		<script src="../reveal/lib/js/head.min.js"></script>
+		<script src="../reveal/js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: '../reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: '../reveal/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../reveal/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: '../reveal/plugin/zoom-js/zoom.js', async: true },
+					{ src: '../reveal/plugin/notes/notes.js', async: true }
+				]
+			});
+			Reveal.configure({ slideNumber: true });
+
+		</script>
+
+	</body>
+</html>
